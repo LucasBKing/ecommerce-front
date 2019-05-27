@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export const getUserById = id => {
     return axios
-        .get(process.env.REACT_APP_API_URL+'/users/account/'+id)
+        .get(process.env.REACT_APP_API_URL+'users/account/'+id)
         .then(res => {
             return res.data;
         })
@@ -10,7 +10,7 @@ export const getUserById = id => {
 
 export const updateAccount = (account, id) => {
     return axios
-        .post(process.env.REACT_APP_API_URL+'/users/account', {
+        .post(process.env.REACT_APP_API_URL+'users/account', {
             account: account,
             id: id
         })
@@ -22,7 +22,7 @@ export const updateAccount = (account, id) => {
 
 export const getProviders = () => {
     return axios
-        .get(process.env.REACT_APP_API_URL+'/users/providers')
+        .get(process.env.REACT_APP_API_URL+'users/providers')
         .then(res => {
             return res.data;
         })

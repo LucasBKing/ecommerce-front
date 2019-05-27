@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export const addOrder = data => {
     return axios
-        .post(process.env.REACT_APP_API_URL+'/order/add_order', {
+        .post(process.env.REACT_APP_API_URL+'order/add_order', {
             data:  data
         })
         .then(res => {
@@ -13,7 +13,7 @@ export const addOrder = data => {
 
 export const getOrders = () => {
     return axios
-        .get(process.env.REACT_APP_API_URL+'/order')
+        .get(process.env.REACT_APP_API_URL+'order')
         .then(res => {
             return res.data;
         })
