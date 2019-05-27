@@ -1,0 +1,35 @@
+.tabsProviders a{
+    color: #595959;
+    padding: 5px;    
+}
+
+.tabsProviders a:hover{
+    color: #57b846;
+    text-decoration: none;
+}
+.imagesProviders:hover {
+    cursor: pointer !important;
+    opacity: 0.5 !important;
+}
+
+.imagesProviders img{
+    border-radius: 0;
+}
+
+.linksProviders a{
+    color: white;
+}
+.linksProviders a:hover{
+    color:white;
+}
+
+.linksProviders {
+    opacity: 0 !important;
+}
+
+.linksProviders:hover{
+ 
+    font-size: 30px !important;
+    font-weight: bold;
+    opacity: 1 !important;
+}

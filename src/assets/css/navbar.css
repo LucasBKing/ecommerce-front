@@ -1,0 +1,55 @@
+.titleDiv {
+    width: 100%;
+    padding: 40px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: initial;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.titleHodierno {
+    font-size: 70px;
+    color: #595959;
+    font-family: 'Ranga', cursive;
+}
+
+.titleHodierno:hover {
+   text-decoration: none;
+   color: #57b846
+}
+
+.navbarHodierno {
+    margin-left: 40px;
+    margin-right: 40px;
+    border-left-color: transparent !important;
+    border-right-color: transparent !important;    
+    border: 1px solid #b3b3b3;
+}
+
+.navbarHodierno a{
+    color: #595959;
+    padding: 10px;
+}
+
+.navbarHodierno a:hover{
+    color: #57b846;
+    text-decoration: none;
+}
+
+.navbarHodierno button {
+    border: 1px solid #b3b3b3;
+    border-radius: 0;
+    margin-bottom: 7px;
+}
+
+.navbarHodierno button:hover {
+    
+    color: white;
+    background-color: #b3b3b3;
+}
