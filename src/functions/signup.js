@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export const signUpAccount = account => {
     return axios
-        .post('http://localhost:4200/users/create', {
+        .post(process.env.REACT_APP_API_URL+'/users/create', {
             account: account
         })
         .then(res => {

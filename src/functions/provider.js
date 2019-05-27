@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export const addItem = item => {
     return axios
-        .post('http://localhost:4200/providers/add', {
+        .post(process.env.REACT_APP_API_URL+'/providers/add', {
             item:  item
         })
         .then(res => {
@@ -12,7 +12,7 @@ export const addItem = item => {
 
 export const getItems = () => {
     return axios
-        .get('http://localhost:4200/providers/')
+        .get(process.env.REACT_APP_API_URL+'/providers/')
         .then(res => {
             return res.data;
         })
@@ -20,7 +20,7 @@ export const getItems = () => {
 
 export const getItemByProviderId = id => {
     return axios
-        .get('http://localhost:4200/providers/get_product_by_provider_id/'+id)
+        .get(process.env.REACT_APP_API_URL+'/providers/get_product_by_provider_id/'+id)
         .then(res => {
             return res.data;
         })
@@ -28,7 +28,7 @@ export const getItemByProviderId = id => {
 
 export const getItemByProviderName = name => {
     return axios
-        .get('http://localhost:4200/providers/'+name)
+        .get(process.env.REACT_APP_API_URL+'/providers/'+name)
         .then(res => {
             return res.data;
         })
